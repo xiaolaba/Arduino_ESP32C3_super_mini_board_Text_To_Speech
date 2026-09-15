@@ -1,6 +1,7 @@
 # Arduino_ESP32C3_super_mini_board_Text_To_Speech
 experiment, default PWM output audio, ESP32-C3 has no DAC hardware, uses GPIO3 as PWM output channel (LEDC module), Talkie library 1.4.0 used.
 
+Arduino 的 Talkie 程式庫是一個非常經典的語音合成庫，它是基於 1970/1980 年代德州儀器（Texas Instruments）的 LPC（線性預測編碼）語音合成晶片（例如 TMS5100，即 Speak & Spell 玩具使用的晶片）原理進行軟體模擬的。由於 Talkie 的核心技術限制與運作機制，無法直接播放中文。  
 
 read, LEDC for PWM audio output, https://docs.espressif.com/projects/esp-iot-solution/en/latest/audio/pwm_audio.html
 
