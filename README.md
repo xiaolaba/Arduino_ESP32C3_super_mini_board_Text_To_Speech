@@ -3,8 +3,10 @@ experiment, default PWM output audio, ESP32-C3 has no DAC hardware, uses GPIO3 a
 
 Arduino 的 Talkie 程式庫是一個非常經典的語音合成庫，它是基於 1970/1980 年代德州儀器（Texas Instruments）的 LPC（線性預測編碼）語音合成晶片（例如 TMS5100，即 Speak & Spell 玩具使用的晶片）原理進行軟體模擬的。由於 Talkie 的核心技術限制與運作機制，無法直接播放中文。  
 
-read, LEDC for PWM audio output, https://docs.espressif.com/projects/esp-iot-solution/en/latest/audio/pwm_audio.html
+read, LEDC for PWM audio output, https://docs.espressif.com/projects/esp-iot-solution/en/latest/audio/pwm_audio.html  
 
+乐鑫TTS 语音合成模型是一个为嵌入式系统设计的轻量化语音合成系统，具有如下主要特性：. 目前仅支持中文. 输入文本采用UTF-8 编码. 输出格式采用流输出，可减少延时.  
+https://docs.espressif.com/projects/esp-sr/zh_CN/latest/esp32s3/speech_synthesis/readme.html
 
 ### boot and done
 ![ESP32-C3_super_mini_board_boot_after.JPG](ESP32-C3_super_mini_board_boot_after.JPG)  
